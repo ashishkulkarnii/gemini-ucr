@@ -25,7 +25,9 @@ If you're looking for a beamer presentation theme, take a look at [Auriga].
 
 1. Make a copy of `beamercolorthemegemini.sty`, update the `\usecolortheme` line in `poster.tex`, and theme the poster to your liking (optional, but highly recommended)
 
-1. Run `make` to build your poster with LuaLaTeX (required for Arial via `fontspec`)
+1. Run `make` to build your poster with LuaLaTeX (required for Arial via `fontspec`).
+   In Overleaf, open **Menu → Settings → Compiler** and select **LuaLaTeX** before
+   recompiling; Overleaf defaults to pdfLaTeX.
 
 ## UC Riverside poster template
 
