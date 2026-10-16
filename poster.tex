@@ -1,4 +1,4 @@
-% Gemini theme
+% UC Riverside-branded Gemini poster template
 % https://github.com/anishathalye/gemini
 
 \documentclass[final]{beamer}
@@ -36,29 +36,36 @@
 % Title
 % ====================
 
-\title{Some fancy title: followed by some more text}
+\title{Poster Title Goes Here}
 
-\author{Alyssa P. Hacker \inst{1} \and Ben Bitdiddle \inst{2} \and Lem E. Tweakit \inst{2}}
+\author{Author Name$^{1}$ \and Author Name$^{2}$}
 
-\institute[shortinst]{\inst{1} Some Institute \samelineand \inst{2} Another Institute}
+\institute[shortinst]{\inst{1} Department or Lab, UC Riverside \samelineand \inst{2} Collaborating Institution}
 
 % ====================
 % Footer (optional)
 % ====================
 
-\footercontent{
-  \href{https://www.example.com}{https://www.example.com} \hfill
-  ABC Conference 2025, New York --- XYZ-1234 \hfill
-  \href{mailto:alyssa.p.hacker@example.com}{alyssa.p.hacker@example.com}}
+\footercontent{\href{https://www.ucr.edu}{ucr.edu} \hfill Conference / Event Name, Year \hfill contact@ucr.edu}
 % (can be left out to remove footer)
 
 % ====================
 % Logo (optional)
 % ====================
 
-% use this to include logos on the left and/or right side of the header:
-% \logoright{\includegraphics[height=7cm]{logo1.pdf}}
-% \logoleft{\includegraphics[height=7cm]{logo2.pdf}}
+% Replace these filenames with the lab/department logos and QR image you want.
+% Leave a filename empty to omit that optional image.
+\newcommand{\lablogo}{assets/lab-logo.png}
+\newcommand{\departmentlogo}{assets/department-logo.png}
+\newcommand{\qrimage}{assets/qr-code.png}
+\newcommand{\logogap}{\hspace{1.2em}}
+\newcommand{\optionalmark}[1]{%
+  \IfFileExists{#1}{\includegraphics[height=5.5cm,keepaspectratio]{#1}}{}}
+\newcommand{\optionalqr}{%
+  \IfFileExists{\qrimage}{\includegraphics[height=6cm,width=6cm,keepaspectratio]{\qrimage}}{}}
+\logoleft{\includegraphics[height=6cm,keepaspectratio]{assets/ucr-horizontal-logo.png}%
+  \logogap\optionalmark{\lablogo}\logogap\optionalmark{\departmentlogo}}
+\logoright{\optionalqr}
 
 % ====================
 % Body
@@ -79,7 +86,7 @@
     \begin{figure}
       \centering
       \begin{tikzpicture}[scale=6]
-        \draw[step=0.25cm,color=gray] (-1,-1) grid (1,1);
+        \draw[step=0.25cm,color=ucrgray] (-1,-1) grid (1,1);
         \draw (1,0) -- (0.2,0.2) -- (0,1) -- (-0.2,0.2) -- (-1,0)
           -- (-0.2,-0.2) -- (0,-1) -- (0.2,-0.2) -- cycle;
       \end{tikzpicture}
@@ -201,8 +208,8 @@
             axis lines=center,
             axis line style={-},
             ticks=none]
-          \addplot[red] {sin(deg(x))};
-          \addplot[blue] {cos(deg(x))};
+          \addplot[color=ucrgold,very thick] {sin(deg(x))};
+          \addplot[color=ucrblue,very thick] {cos(deg(x))};
         \end{axis}
       \end{tikzpicture}
       \caption{Another figure caption.}

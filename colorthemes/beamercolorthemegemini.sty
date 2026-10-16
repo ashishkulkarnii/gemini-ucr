@@ -1,54 +1,41 @@
-% Gemini theme
-% https://github.com/anishathalye/gemini
+% UC Riverside brand palette. Values are taken verbatim from
+% https://brand.ucr.edu/ucr-colors
 
-% ====================
-% Definitions
-% ====================
+\definecolor{ucrblue}{HTML}{003DA5}
+\definecolor{ucrgold}{HTML}{FFB81C}
+\definecolor{ucrwhite}{HTML}{FFFFFF}
+\definecolor{ucrblack}{HTML}{000000}
+\definecolor{ucrgray}{HTML}{4C4C4C}
 
-\definecolor{lightgray}{RGB}{245, 246, 250}
-\definecolor{blue}{RGB}{64, 115, 158}
-\definecolor{darkblue}{RGB}{39, 60, 117}
-\definecolor{lightblue}{RGB}{232, 244, 255}
+% Primary UCR Blue anchors the design; gold is used sparingly as an accent.
+\setbeamercolor{palette primary}{fg=ucrblue,bg=ucrwhite}
+\setbeamercolor{palette secondary}{fg=ucrblue,bg=ucrwhite}
+\setbeamercolor{palette tertiary}{bg=ucrblue,fg=ucrwhite}
+\setbeamercolor{palette quaternary}{fg=ucrblue,bg=ucrwhite}
+\setbeamercolor{structure}{fg=ucrblue}
 
-% ====================
-% Theme
-% ====================
+\setbeamercolor{headline}{fg=ucrwhite,bg=ucrblue}
+\setbeamercolor{headline title}{fg=ucrwhite}
+\setbeamercolor{headline author}{fg=ucrwhite}
+\setbeamercolor{headline institute}{fg=ucrwhite}
+\setbeamercolor{headline rule}{bg=ucrgold}
 
-% Basic colors
-\setbeamercolor{palette primary}{fg=black,bg=white}
-\setbeamercolor{palette secondary}{fg=black,bg=white}
-\setbeamercolor{palette tertiary}{bg=black,fg=white}
-\setbeamercolor{palette quaternary}{fg=black,bg=white}
-\setbeamercolor{structure}{fg=darkblue}
+\setbeamercolor{block title}{fg=ucrblue,bg=ucrwhite}
+\setbeamercolor{block separator}{bg=ucrgold}
+\setbeamercolor{block body}{fg=ucrblack,bg=ucrwhite}
 
-% Headline
-\setbeamercolor{headline}{fg=lightgray,bg=blue}
-\setbeamercolor{headline rule}{bg=darkblue}
+\setbeamercolor{block title alerted}{fg=ucrblue,bg=ucrgold}
+\setbeamercolor{block separator alerted}{bg=ucrblue}
+\setbeamercolor{block body alerted}{fg=ucrblack,bg=ucrgold}
 
-% Block
-\setbeamercolor{block title}{fg=blue,bg=white}
-\setbeamercolor{block separator}{bg=black}
-\setbeamercolor{block body}{fg=black,bg=white}
+\setbeamercolor{block title example}{fg=ucrwhite,bg=ucrblue}
+\setbeamercolor{block separator example}{bg=ucrgold}
+\setbeamercolor{block body example}{fg=ucrblack,bg=ucrwhite}
 
-% Alert Block
-\setbeamercolor{block title alerted}{fg=blue,bg=lightblue}
-\setbeamercolor{block separator alerted}{bg=black}
-\setbeamercolor{block body alerted}{fg=black,bg=lightblue}
-
-% Example Block
-\setbeamercolor{block title example}{fg=blue,bg=lightgray}
-\setbeamercolor{block separator example}{bg=black}
-\setbeamercolor{block body example}{fg=black,bg=lightgray}
-
-% Heading
-\setbeamercolor{heading}{fg=black}
-
-% Itemize
-\setbeamercolor{item}{fg=darkblue}
-
-% Bibliography
-\setbeamercolor{bibliography item}{fg=black}
-\setbeamercolor{bibliography entry author}{fg=black}
-\setbeamercolor{bibliography entry title}{fg=black}
-\setbeamercolor{bibliography entry location}{fg=black}
-\setbeamercolor{bibliography entry note}{fg=black}
+\setbeamercolor{heading}{fg=ucrblue}
+\setbeamercolor{item}{fg=ucrblue}
+\setbeamercolor{bibliography item}{fg=ucrblue}
+\setbeamercolor{bibliography entry author}{fg=ucrblack}
+\setbeamercolor{bibliography entry title}{fg=ucrblack}
+\setbeamercolor{bibliography entry location}{fg=ucrblack}
+\setbeamercolor{bibliography entry note}{fg=ucrblack}

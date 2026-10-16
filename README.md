@@ -27,6 +27,23 @@ If you're looking for a beamer presentation theme, take a look at [Auriga].
 
 1. Run `make` to build your poster
 
+## UC Riverside poster template
+
+The default `poster.tex` uses UCR Blue (`#003DA5`), UCR Gold (`#FFB81C`),
+white (`#FFFFFF`), and black (`#000000`) from the [official UCR color guide](https://brand.ucr.edu/ucr-colors).
+Arial is used throughout. The header includes the UCR logo in `assets/` and
+provides optional image slots for partner marks and a QR code:
+
+- Put a lab logo at `assets/lab-logo.png`.
+- Put a department logo at `assets/department-logo.png`.
+- Put a QR code image at `assets/qr-code.png`; the upper-right area stays blank
+  while this file is absent.
+
+Edit the image paths, title, author, affiliations, footer, and poster content
+in `poster.tex` as needed. The lab and department logo files are optional and
+appear next to the UCR logo at the upper left; the QR image appears at the
+upper right.
+
 ## FAQ
 
 See the [FAQ] in the Wiki for answers to frequently asked questions such as how to add an institution logo to the poster.
